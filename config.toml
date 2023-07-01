@@ -1,0 +1,77 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Abhishek Mahadevan Raju"
+theme = "paper"
+
+
+[params]
+  # color style
+#   color = 'linen'                           # linen, wheat, gray, light
+  color = 'linen'                           # linen, wheat, gray, light
+  # header social icons
+#   twitter = 'YOUR_TWITTER_ID'               # twitter.com/YOUR_TWITTER_ID
+  github = 'abhishekmaha23'                 # github.com/YOUR_GITHUB_ID
+#   instagram = 'YOUR_INSTAGRAM_ID'           # instagram.com/YOUR_INSTAGRAM_ID
+  linkedin = 'abhishekmaha23'             # linkedin.com/in/YOUR_LINKEDIN_ID
+#   mastodon = 'YOUR_MASTODON_LINK'           # e.g. 'https://mastodon.instance/@xxx'
+#   rss = true                                # show rss icon
+
+  # home page profile
+  avatar = 'abhishek.mahadevan23@gmail.com'                 # gravatar email or image url
+  name = 'Abhishek Mahadevan Raju'
+  bio = 'Data/Systems/Full Stack Engineer with an interest in Privacy Enhancing Technologies, Self Sovereign Identities and Generative Models'
+
+  # misc
+#   disableHLJS = true                        # disable highlight.js
+#   monoDarkIcon = true                       # show monochrome dark mode icon
+#   gravatarCdn = 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
+#   graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
+  math = true                               # enable KaTex math typesetting globally
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
