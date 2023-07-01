@@ -2,7 +2,8 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Abhishek Mahadevan Raju"
 theme = "paper"
-
+googleAnalytics = 'G-384T34T0FV'
+IsProduction = true
 
 [params]
   # color style
