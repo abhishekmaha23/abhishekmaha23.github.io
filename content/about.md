@@ -9,14 +9,13 @@ author = "Abhishek Mahadevan Raju"
 Hello!
 
 I'm Abhishek, and I'm a scientist researcher currently working at the Data Ecosystems department in TNO.
-I work on creating and publishing prototypes and demonstrations related to the following concepts:
 
+I work on creating and publishing prototypes and demonstrations related to the following concepts:
 - Data Space implementations applied in multiple domains
 - Smart Industry applications (related to IoT, modelling and monitoring)
 - Semantic models (implementing prototype systems with OWL and SHACL models used for live use-cases)
 
 I'm passionate about the following:
-
 - Self-sovereign identity
 - Federated systems
 - Zero knowledge proofs and other privacy enhancing technologies
