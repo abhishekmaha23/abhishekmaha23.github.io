@@ -1,7 +1,7 @@
 ---
-title: "PostList ZKP"
+title: "Posts about Zero Knowledge Proofs"
 date: 2023-07-01T13:25:33+02:00
-draft: true
+draft: false
 ---
 
 ## Introduction

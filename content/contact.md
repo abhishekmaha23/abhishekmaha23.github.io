@@ -1,11 +1,10 @@
-+++
-title = "Contact"
-description = "Contacting me"
-date = "2019-02-28"
-aliases = ["contact"]
-author = "Abhishek Mahadevan Raju"
-
-+++
+---
+title: "Contact"
+subtitle: "Get in touch!"
+date: "2019-02-28"
+aliases: ["contact"]
+author: "Abhishek Mahadevan Raju"
+---
 
 I currently reside in Eindhoven in the Netherlands.
 
