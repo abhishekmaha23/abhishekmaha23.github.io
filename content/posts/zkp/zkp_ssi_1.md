@@ -36,6 +36,7 @@ In no case should people actually trust provide a single centralized ID to authe
 | Full Control       | Censorship Resistance | 
 | Necessary Proofs   | Web of Trust          |
 | Legally-Enabled    | Defend Human Rights vs. Powerful Actors                      |
+
 Source : https://www.cyberforge.com/can-less-be-more/
 
 It can be difficult to get a hold on the entire ecosystem of SSI in a single post, and the focus here is to look at how these concepts can be applied in a test use-case.
@@ -46,7 +47,11 @@ Zero-Knowledge proofs (ZKP) were first introduced in a paper in 1985 [here](http
 
 To give a brief introduction to the concept, it may be useful to refer to Vitalik Buterin's definitions [here](https://vitalik.ca/general/2021/01/26/snarks.html) and [here](https://vitalik.ca/general/2022/06/15/using_snarks.html) (the founder of Ethereum).
 
+<div style="width: 50%;">
+
 > Suppose that you have a public input \\(x\\), a private input \\(w\\), and a (public) function \\(f(x, w) \rightarrow \{True, False\}\\) that performs some kind of verification on the inputs. With a ZK-SNARK, you can prove that you know an \\(w\\) such that \\(f(x, w) = True\\) for some given \\(f\\) and \\(x\\), without revealing what \\(w\\) is. Additionally, the verifier can verify the proof much faster it would take for them to compute \\(f(x,w)\\) themselves, even if they know \\(w\\).
+
+</div>
 
 Essentially:
 - A prover can prove a statement (secret) to a destination entity with the help of a verifier, without actually revealing the actual statement itself.
@@ -72,6 +77,7 @@ A small diagram of all the stakeholders involved here would be as follows:
 **Case 2:**
 
 Alice (the same person from the previous use-case) is a citizen who wants to take an international vacation to a country, and needs to buy a ticket from an airline. Airlines usually don't validate details at the time of purchasing tickets, but it would be quite useful to eliminate the immigration queue from airports - it's a complicated process that could just as well be done digitally.
+
 So here, we have 4 stakeholders - Alice, the airline, the passport-issuing government and the visa-issuing government.
 
 A combination of proofs from both governments is needed in collaboration to prove to the airline that they are legally able to go to the destination country. In this example,
@@ -88,9 +94,9 @@ To achieve these within the current ecosystem of Self-Sovereign Identities and Z
 Let's begin with a brief technology-agnostic introduction to SSI. We'll go briefly over the main questions, and in the end make a start on our implementation for our use-case.
 
 Self-sovereign Identities are built on top of three pillars:
-	- Decentralized Identifiers - Digital Identifiers owned and managed by individuals, or the parties that they delegate trust to.
-	- Verifiable Credentials - Credentials denoting certifications, validations, real-world identity, and so on.
-	- Verifiable Presentations - Representations of Verifiable credentials created depending on context to validate transactions. Meant to be short-lived and non-reusable.
+- *Decentralized Identifiers* - Digital Identifiers owned and managed by individuals, or the parties that they delegate trust to.
+- *Verifiable Credentials* - Credentials denoting certifications, validations, real-world identity, and so on.
+- *Verifiable Presentations* - Representations of Verifiable credentials created depending on context to validate transactions. Meant to be short-lived and non-reusable.
 
 An overview of the ecosystem can be found at a categorization effort by TNO's eSSIF-lab [here](https://tno-ssi-lab.github.io/standardisation-overview/). Different layers of components are categorized according to their position in the ecosystem.
 
@@ -159,7 +165,7 @@ The actual DID document is to be written using JSON-LD (if @context is included)
 ```
 
 This is just an example: you need to choose two main aspects for a DID:
-1. **Method**: There's a large spectrum (hundreds) of DID methods, all in varying degrees of maturity. A more comprehensive listing is found at (didregistry.com)[didregistry.com]. Companies developing solutions around SSI and DIDs often use the following:
+1. **Method**: There's a large spectrum (hundreds) of DID methods, all in varying degrees of maturity. A more comprehensive listing is found at [didregistry.com](didregistry.com). Companies developing solutions around SSI and DIDs often use the following:
 	1. **Ethereum**: *did:eth* - DIDs resolvable through the Ethereum ecosystem
 	2. **Public key**: *did:key* - Public Key DIDs that are usually used for local applications
 	3. **Web**: *did:web* - Simple implementation of non-blockchain DIDs that can be hosted anywhere
@@ -167,11 +173,11 @@ This is just an example: you need to choose two main aspects for a DID:
 	5. **Sovrin**: *did:sov* - DIDs on the Sovrin network which is a private ledger based on Hyperledger Indy.
 	6. **Indy**: *did:indy* - DIDs resolvable on any network based on Hyperledger Indy
 	7. **Peer**: *did:peer* - An extensible version of did:keys that can be hyperlocal and usable by devices
-	8. **Sidetree** - *did:sidetree* -  https://identity.foundation/sidetree/spec/ - A specification for how to support DIDs running atop any `decentralized anchoring chain` (Bitcoin, Ethereum, other DLTs)
+	8. **Sidetree** - [*did:sidetree*](https://identity.foundation/sidetree/spec/) - A specification for how to support DIDs running atop any 'decentralized anchoring chain' (Bitcoin, Ethereum, other DLTs)
 	
   Many more exist! All of these methods come with their own standards and specifications for interoperability. No form of versioning is consistent across these methods, as they are all independently developed (and correspondingly not always compatible with all the available tooling).
 
-2. **Verification Methods**: DID documents usually mention one or more verification methods, such as cryptographic public keys to authenticate or authorize actions based on the DID. Verification methods can take an arbitrary number of parameters, depending on the implementation. A overview is found at https://www.w3.org/TR/did-spec-registries/, which also provides input for all possible values supported by DID documents, as well as many exceptional use-cases.
+2. **Verification Methods**: DID documents usually mention one or more verification methods, such as cryptographic public keys to authenticate or authorize actions based on the DID. Verification methods can take an arbitrary number of parameters, depending on the implementation. A overview is found [here](https://www.w3.org/TR/did-spec-registries/), which also provides input for all possible values supported by DID documents, as well as many exceptional use-cases.
 
 A DID document may contain references or definitions of the Verification Methods associated with the DID for the purposes of 
 - *Authentication*: logging and general credential use

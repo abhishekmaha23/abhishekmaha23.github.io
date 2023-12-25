@@ -6,6 +6,7 @@ googleAnalytics = 'G-384T34T0FV'
 IsProduction = true
 
 [params]
+    defaultTheme = 'light'
   # color style
 #   color = 'linen'                           # linen, wheat, gray, light
   color = 'linen'                           # linen, wheat, gray, light
@@ -20,7 +21,7 @@ IsProduction = true
   # home page profile
   avatar = 'abhishek.mahadevan23@gmail.com'                 # gravatar email or image url
   name = 'Abhishek Mahadevan Raju'
-  bio = 'Data/Systems/Full Stack Engineer with an interest in Privacy Enhancing Technologies, Self Sovereign Identities and Generative Models'
+  bio = 'Data Ecosystems Researcher with an interest in Privacy Enhancing Technologies, Self Sovereign Identities and the Modern Internet'
 
   # misc
 #   disableHLJS = true                        # disable highlight.js
@@ -76,3 +77,6 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
+
+  [services.disqus]
+    shortname = 'abhishekmahadevanraju'

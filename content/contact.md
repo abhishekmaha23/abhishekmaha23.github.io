@@ -8,7 +8,7 @@ author: "Abhishek Mahadevan Raju"
 
 I currently reside in Eindhoven in the Netherlands.
 
-My email address is **abhishek** [dot] **mahadevan23** [at] **gmail** [dot] **com**
+My email address is **abhishek** [dot] **mahadevan23** [at] **gmail** [dot] **com**.
 
 Github:
 
