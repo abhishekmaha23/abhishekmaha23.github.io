@@ -70,6 +70,18 @@
   </script>
   {{ end }}
 
+  <!-- Utterances -->
+  {{ if and site.Params.comments (not (eq .Params.comments false)) }}
+  <div class="mt-24" id="utterances_thread"></div>
+  <script src="https://utteranc.es/client.js"
+    repo="abhishekmaha23/abhishekmaha23.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+  {{ end }} 
+
   <!-- GraphComment -->
   {{ if and site.Params.graphCommentId (not (eq .Params.comments false)) }}
   <div class="mt-24" id="graphcomment"></div>

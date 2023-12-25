@@ -4,7 +4,6 @@ title = "Abhishek Mahadevan Raju"
 theme = "paper"
 googleAnalytics = 'G-384T34T0FV'
 IsProduction = true
-disqusShortname = "https-abhishekmaha23-github-io"
 
 [params]
     defaultTheme = 'light'
@@ -30,6 +29,8 @@ disqusShortname = "https-abhishekmaha23-github-io"
 #   gravatarCdn = 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
 #   graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
   math = true                               # enable KaTex math typesetting globally
+
+  comments = true
 
 [menu]
   [[menu.main]]
@@ -78,6 +79,3 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
-
-  [services.disqus]
-    shortname = 'https-abhishekmaha23-github-io'
