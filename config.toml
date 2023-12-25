@@ -4,6 +4,7 @@ title = "Abhishek Mahadevan Raju"
 theme = "paper"
 googleAnalytics = 'G-384T34T0FV'
 IsProduction = true
+disqusShortname = "https-abhishekmaha23-github-io"
 
 [params]
     defaultTheme = 'light'
@@ -79,4 +80,4 @@ series = "series"
     disableInlineCSS = true
 
   [services.disqus]
-    shortname = 'abhishekmahadevanraju'
+    shortname = 'https-abhishekmaha23-github-io'
